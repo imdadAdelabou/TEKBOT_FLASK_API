@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
@@ -81,6 +80,3 @@ def delete_product(id):
         "code": 202,
         "msg": "product delete",
     })
-
-if __name__ == "__main__":
-    app.run(debug=True)
